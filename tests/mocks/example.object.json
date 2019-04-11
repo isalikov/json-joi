@@ -1,0 +1,20 @@
+{
+    "key 1": "Some String",
+    "key 2": 100500,
+    "key 3": false,
+    "key 4": true,
+    "key 5": null,
+    "key 6": {
+        "a": 1,
+        "b": 3,
+        "c": ["foo", "bar"],
+        "d": {
+            "foo": "foo",
+            "bar": 0
+        }
+    },
+    "key 7": [{
+        "x": 100,
+        "y": "nil"
+    }]
+}

@@ -1,0 +1,40 @@
+pipeline:
+  install:
+    image: iknpx/archnode
+    commands:
+      - yarn -s
+    when:
+      branch:
+        - master
+      event:
+        - push
+
+  test:
+    image: iknpx/archnode
+    commands:
+      - yarn test
+    when:
+      branch:
+        - master
+      event:
+        - push
+
+
+  lint:
+    image: iknpx/archnode
+    commands:
+      - yarn lint
+    when:
+      branch:
+        - master
+      event:
+        - push
+
+  publish:
+    image: plugins/npm
+    secrets: [ NPM_TOKEN, NPM_EMAIL ]
+    when:
+      branch:
+        - master
+      event:
+        - push
