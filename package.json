@@ -1,6 +1,6 @@
 {
   "name": "json-joi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JSON to Joi Schema converter",
   "main": "index.js",
   "repository": "git@github.com:iknpx/json-joi.git",
