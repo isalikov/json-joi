@@ -10,7 +10,7 @@ module.exports = (type, instance = () => { }, options = { null: false }) => {
             return options.null ? Joi.string().allow('', null) : Joi.string()
 
         case 'number':
-            return options.null ? Joi.number().allow(null) : Joi.number()
+            return options.null ? Joi.number().allow(null).unsafe() : Joi.number().unsafe()
 
         case 'boolean':
             return options.null ? Joi.boolean().allow(null) : Joi.boolean()
