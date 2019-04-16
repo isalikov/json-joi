@@ -16,6 +16,6 @@ module.exports = (type, instance = () => { }, options = { null: false }) => {
             return options.null ? Joi.boolean().allow(null) : Joi.boolean()
 
         default:
-            return instance(type)
+            return instance(type, options)
     }
 }
