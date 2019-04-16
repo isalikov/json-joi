@@ -20,7 +20,7 @@ describe('json-joi utils :: getType', () => {
     test('to be number', () => {
         const type = getType(100500)
 
-        expect(type).toEqual(Joi.number())
+        expect(type).toEqual(Joi.number().unsafe())
     })
 
     test('to be any for null', () => {

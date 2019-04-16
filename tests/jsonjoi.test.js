@@ -41,7 +41,7 @@ describe('json-joi api', () => {
 
         expect(schema).toEqual(
             Joi.array().items(
-                Joi.number()
+                Joi.number().unsafe()
             )
         )
     })
@@ -51,7 +51,7 @@ describe('json-joi api', () => {
 
         expect(schema).toEqual(
             Joi.array().allow(null).items(
-                Joi.number().allow(null)
+                Joi.number().allow(null).unsafe()
             )
         )
     })
