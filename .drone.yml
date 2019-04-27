@@ -19,7 +19,6 @@ pipeline:
       event:
         - push
 
-
   lint:
     image: iknpx/archnode
     commands:
