@@ -1,7 +1,5 @@
 # json-joi
 
-
-![Build Status](https://drone.dayler.dev/api/badges/iknpx/json-joi/status.svg)
 [![npm version](https://badge.fury.io/js/json-joi.svg)](https://badge.fury.io/js/json-joi)
 [![Downloads](http://img.shields.io/npm/dm/json-joi.svg?style=flat)](https://npmjs.org/package/json-joi)
 
